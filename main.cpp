@@ -7,8 +7,8 @@
 class Entity
 {
 
-    // Protected means that this class and all subclasses can access this data
-protected:
+    // Public means that everything can access this data
+public:
     int X, Y;
     void Print() {} // example method to further show visibility
 
@@ -25,16 +25,16 @@ class Player : public Entity
 public:
     Player()
     {
-        X = 2;   // You can now use the data from Entity that is protected
-        Print(); // and here as well
+        X = 2;
+        Print();
     }
 };
 
 int main()
 {
     Entity e;
-    e.Print(); // Cannot use Print here as 'e' is outside of the class scope and is not part of a subclass
-    e.X = 2;   // Although e is an Entity, X is private and cannot be called outside of the class scope and is not part of a subclass
+    e.Print(); // Now print can be used here as everything is public
+    e.X = 2;   // same here
 
     std::cin.get();
 }
