@@ -7,16 +7,16 @@
 class Entity
 {
 
-    // Private means only this class and a "friend" class/function can access the data
-private:
+    // Protected means that this class and all subclasses can access this data
+protected:
     int X, Y;
-    void Print() {} // example method to further show private usage
+    void Print() {} // example method to further show visibility
 
 public:
     Entity()
     {
         X = 0;
-        Print(); // Print can be used here as it is within the class scope
+        Print();
     }
 };
 
@@ -25,16 +25,16 @@ class Player : public Entity
 public:
     Player()
     {
-        X = 2;   // Still can't access it here as Player is outside of the class scope
-        Print(); // Cannot use Print here as Player is outside of the class scope
+        X = 2;   // You can now use the data from Entity that is protected
+        Print(); // and here as well
     }
 };
 
 int main()
 {
     Entity e;
-    e.Print(); // Cannot use Print here as 'e' is outside of the class scope
-    e.X = 2;   // Although e is an Entity, X is private and cannot be called outside of the class scope
+    e.Print(); // Cannot use Print here as 'e' is outside of the class scope and is not part of a subclass
+    e.X = 2;   // Although e is an Entity, X is private and cannot be called outside of the class scope and is not part of a subclass
 
     std::cin.get();
 }
