@@ -10,10 +10,10 @@
   <a href="https://github.com/AchroDev/cpp_visibility">
     <img src ="resources/c++.svg" alt="Logo" width="150" height="150">
   </a>
-<h3 align="center">  ~ AchroDev </h3>
+<h3 align="center"> C++ Visibility ~ AchroDev </h3>
 
   <p align="center">
-    Project Description.
+    How Visibility works in C++
     <br />
   </p>
 </div>
@@ -24,6 +24,8 @@
 
 <a href='https://ko-fi.com/R6R3WKVOY' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 </a>
+
+This project goes over how Visibility works in C++, following The Cherno.
 
 #
 
@@ -41,13 +43,12 @@
 
 ## Acknowledgements
 
-- [Ack1][ack1-link]
+- [The Cherno][ack1-link]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [license-shield]: https://img.shields.io/github/license/AchroDev/AchroDev.svg?style=for-the-badge
 [license-url]: https://github.com/AchroDev/echto/blob/main/LICENSE.txt
-
-[ack1-link]:
+[ack1-link]: https://www.youtube.com/@TheCherno
 [Acknowledgements]: https://github.com/AchroDev/echto?tab=readme-ov-file#acknowledgements
